@@ -1,32 +1,53 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <toolbar />
+    <Carousel />
+    <About />
+    <SlideCard />
+    <Ratings />
+    <Products />
+    <Reservation />
+    <Circular />
+    <Footer />
+  
+
+    
+    
+
+
+
+    
+
+
+    
+    <router-link to="/">Home</router-link>
+    <router-link :to="{name: 'About'}">About</router-link>
+    <router-link to="/nouveau">Nouveau</router-link>
+    <router-view></router-view>
+    
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
-}
+export default {
+  name: 'App',
+  components: {
+    Toolbar: () => import('@/components/Toolbar'),
+    Carousel: () => import('@/components/Home/Carousel'),    
+    FeedCard: () => import('@/components/Home/FeedCard'),    
+    Services: () => import('@/components/Home/Services'),    
+    Timeline: () => import('@/components/Home/Timeline'),
+    Test: () => import('@/components/Home/Test'),
+    About: () => import('@/components/Home/About'),
+    Footer: () => import('@/components/Footer'),
+    SlideCard: () => import('@/components/Home/SlideCard'),
+    Circular: () => import('@/components/Home/Circular'),
+    Products: () => import('@/components/Home/Products'),
+    Reservation: () => import('@/components/Home/Reservation'),
+    Ratings: () => import('@/components/Home/Ratings'),
+        
+  },
+};
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
