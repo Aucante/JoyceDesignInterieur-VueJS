@@ -1,6 +1,6 @@
 <template>
   <v-container fluid id="backgroundContainer">
-    <v-row class="mx-16">
+    <v-row>
       <v-col
       v-for="(asset, i) in assets"
       :key="i"

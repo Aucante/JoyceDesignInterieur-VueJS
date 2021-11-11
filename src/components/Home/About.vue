@@ -26,6 +26,19 @@
 
                     </v-col>
                 </v-row>
+                <v-col
+                    cols="12"
+                    class="d-flex justify-center"
+                >
+                    <v-btn
+                color="grey darken-4 white--text"
+                class="rounded-0 pa-5 mb-8"
+                elevation="5"
+                router :to="'/about'"
+                >
+                En savoir plus
+                </v-btn>
+                </v-col>
             </v-container>
         </v-col>
     </v-row>

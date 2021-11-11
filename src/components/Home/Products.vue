@@ -26,7 +26,7 @@
                 class="d-flex justify-center mb-4"
                 >{{service.avatar}}</v-icon>
                 <div>
-                    <p class="d-flex justify-start title font-weight-medium">{{service.title}}</p>
+                    <p class="d-flex justify-center title font-weight-medium">{{service.title}}</p>
                 </div>
                 <div class="mt-7">
                 <p class="d-flex justify-start body-2 font-weight-light">- {{service.content1}}</p>
@@ -41,7 +41,7 @@
                 >
                     <v-btn
                 color="grey darken-4 white--text"
-                class="rounded-0 pa-5 mb-8"
+                class="rounded-0 pa-3 mb-8"
                 elevation="5"
                 >
                 Découverte des prestations
