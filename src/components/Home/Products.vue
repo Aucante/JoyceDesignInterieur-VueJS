@@ -41,7 +41,7 @@
                 >
                     <v-btn
                 color="grey darken-4 white--text"
-                class="rounded-0 pa-5"
+                class="rounded-0 pa-5 mb-8"
                 elevation="5"
                 >
                 Découverte des prestations

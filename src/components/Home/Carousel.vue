@@ -2,7 +2,7 @@
     
             <v-carousel
             cycle
-            height="400"
+            height="440"
             show-arrows-on-hover
             delimiter-icon="mdi-minus"
             >
@@ -13,43 +13,34 @@
             >
               <v-row>
                 <v-col
-                  cols="12"
-                  align="start"
-                  sm="4"
-                  md="4"
-                  lg="3"
-                  xl="3"
-                  offset="1"
+                  cols="10"
+                  sm="5"
+                  md="5"
+                  lg="5"
+                  xl="5"
+                  class="d-flex justify-start"
                 >
-                  <v-container class="fill-height">
+                  <v-container class="d-flex justify-center fill-height ml-10 mt-16">
                 <v-responsive
-                  class="d-flex align-start mx-auto mt-10"
+                  class="d-flex align-center mx-auto mt-10"
                   height="100%"
                   max-width="700"
                   width="100%"
                 >
-                  <base-subheading
-                    size="text-h2" 
-                    weight="regular"
-                    title="TEST"
-                  />
-                  <base-heading
-                    size="text-h2"
-                    title="WELCOME TO ZERO"
-                    weight="medium"
-                  />
                   <base-body
                     class="display-1 white--text"
                   >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                   {{slide.content}} 
                   </base-body>
                   
+                  <v-row>
                     <v-btn
                       large
-                      class="mt-5 pa-5 rounded-0 black white--text"
+                      class="mt-7 ml-4 px-10  rounded-0 white black--text"
                     >
-                      ENTER HOME
+                      {{slide.btn}}
                     </v-btn>
+                  </v-row>
                   
 
                 </v-responsive>
@@ -66,9 +57,9 @@
 </template>
 
 <script>
-import Image1 from './../../assets/Images/dining-room-gb5dbd9872_1280.jpg'
-import Image2 from './../../assets/Images/furniture-g3b934f1e3_1280.jpg'
-import Image3 from './../../assets/Images/home-g31af290ab_1280.jpg'
+import Image1 from './../../assets/Images/image5xl.jpg'
+import Image2 from './../../assets/Images/image4xl.jpg'
+import Image3 from './../../assets/Images/image10xl.jpg'
 
   export default {
     data () {
@@ -83,13 +74,13 @@ import Image3 from './../../assets/Images/home-g31af290ab_1280.jpg'
         ],
         slides: [
           {
-            src: Image1,
+            src: Image1, content: 'SUBLIMEZ VOTRE INTERIEUR', colorText: 'white', btn: 'Découvrir'
           },
           {
-            src: Image2,
+            src: Image2, content: 'DECOUVREZ NOS REALISATIONS', colorText: 'white', btn: 'Découvrir'
           },
           {
-            src: Image3,
+            src: Image3, content: 'PRISE DE CONTACT', colorText: 'blue-grey darken-4', btn: 'Contact'
           },
         ],
       }
