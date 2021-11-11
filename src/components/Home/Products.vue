@@ -2,7 +2,7 @@
     <v-container fluid id="backgroundContainer">
         <p
         class="d-flex justify-center display-1 my-8 font-weight-medium"
-        >PRESTATIONS</p>
+        >{{title}}</p>
         <v-divider></v-divider>
         <v-container>
             <v-row>
@@ -44,7 +44,7 @@
                 class="rounded-0 pa-3 mb-8"
                 elevation="5"
                 >
-                Découverte des prestations
+                {{btn}}
                 </v-btn>
                 </v-col>
             </v-row>
@@ -63,6 +63,8 @@ export default {
           {title: 'Option 3D à la carte', avatar: 'mdi-apple-keyboard-option', content1: 'Plan d\'aménagement 3D', content2: 'Rendu 360°', content3: null, content4: null, content5: null, option: '(Prestations à la carte)'},
           {title: 'Option 3D au forfait', avatar: 'mdi-lock-open-alert-outline', content1: '3D version supplémentaire pièce simple', content2: '3D version supplémentaire pièce technique', content3: '3D version supplémentaire pièce multifonctions', content4: null, content5: null, option: '(Prestation au forfait)'},
       ],
+            title: 'PRESTATIONS',
+            btn: 'Découverte des prestations',
         }
     }
     

@@ -70,7 +70,6 @@
 
 import Image1 from './../../assets/Images/image1.jpg'
 import Image2 from './../../assets/Images/image2.jpg'
-import Image3 from './../../assets/Images/image3.jpg'
 import Image4 from './../../assets/Images/image4.jpg'
 import Image5 from './../../assets/Images/image5.jpg'
 import Image6 from './../../assets/Images/image6.jpg'

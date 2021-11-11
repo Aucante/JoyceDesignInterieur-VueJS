@@ -2,7 +2,7 @@
   <v-container fluid class="my-16">
       <p
         class="d-flex justify-center display-1 font-weight-medium"
-        >AVIS CLIENTS</p>
+        >{{title}}</p>
         <v-divider></v-divider>
       <v-card
         color="white"
@@ -32,7 +32,7 @@
                 {{customer.name}}
                 </v-card-text>
                 <v-rating
-                v-model="rating"
+                v-model="customer.rating"
                 background-color="blue-grey lighten-1"
                 color="blue-grey darken-3"
                 small
@@ -85,11 +85,11 @@
 <script>
   export default {
     data: () => ({
-      rating: 4,
+      title: 'AVIS CLIENTS',
       customers: [
-        {name: 'Lea. J', content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur. Je n\'hésiterais pas à refaire appel à vos services. Cordialement'},
-        {name: 'Lisa. B', content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur.'},
-        {name: 'Martine. S', content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur.'},
+        {name: 'Lea. J', content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur. Je n\'hésiterais pas à refaire appel à vos services. Cordialement', rating: 4},
+        {name: 'Lisa. B', content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur.', rating: 3},
+        {name: 'Martine. S', content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur.', rating: 4},
       ]  ,
       length: 3,
       onboarding: 0,

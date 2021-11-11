@@ -6,7 +6,7 @@
             <v-container fluid>
                 <p
                 class="d-flex justify-center display-1 my-8 font-weight-medium"
-                >A PROPOS</p>
+                >{{title}}</p>
                 <v-divider></v-divider>
                 <v-row>
                     <v-col
@@ -17,10 +17,10 @@
                     
                         <v-container>
                             <div class="my-7">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat facere quam vitae? Quisquam harum nulla odit fuga consequuntur atque. Suscipit rerum voluptatibus minima obcaecati distinctio fuga harum omnis blanditiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet explicabo necessitatibus natus beatae sit consequuntur commodi nisi nesciunt blanditiis? Enim, id! Illo quo officia quaerat quos corrupti beatae aliquam recusandae.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat facere quam vitae? Quisquam harum nulla odit fuga consequuntur atque. Suscipit rerum voluptatibus minima obcaecati distinctio fuga harum omnis blanditiis!</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat facere quam vitae? Quisquam harum nulla odit fuga consequuntur atque. Suscipit rerum voluptatibus minima obcaecati distinctio fuga harum omnis blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci consectetur hic dignissimos odio rerum velit minima aspernatur repellendus omnis voluptatum! Quis, totam voluptatum! Beatae deserunt, quaerat nobis perspiciatis excepturi repellendus?</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat facere quam vitae? Quisquam harum nulla odit fuga consequuntur atque. Suscipit rerum voluptatibus minima obcaecati distinctio fuga harum omnis blanditiis!</p>
+                                <p
+                                v-for="n in length"
+                                :key="n"
+                                >{{content}}</p>    
                             </div>
                         </v-container>
 
@@ -36,10 +36,25 @@
                 elevation="5"
                 router :to="'/about'"
                 >
-                En savoir plus
+                {{btn}}
                 </v-btn>
                 </v-col>
             </v-container>
         </v-col>
     </v-row>
 </template>
+
+<script>
+
+export default {
+    data() {
+        return {
+            title: 'A PROPOS',
+            btn: 'En savoir plus',
+            content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat facere quam vitae? Quisquam harum nulla odit fuga consequuntur atque. Suscipit rerum voluptatibus minima obcaecati distinctio fuga harum omnis blanditiis!',
+            length: 3,
+        }
+    }
+   
+}
+</script>
