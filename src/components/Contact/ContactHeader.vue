@@ -24,19 +24,7 @@
                         </v-container>
 
                     </v-col>
-                    <v-col
-                    cols="12"
-                    class="d-flex justify-center"
-                    >
-                    <v-btn
-                    color="grey darken-4 white--text"
-                    class="rounded-0 pa-5 mt-n12"
-                    elevation="5"
-                    router :to="link"
-                    >
-                {{btn}}
-                </v-btn>
-                </v-col>
+                    
                 </v-row>
             </v-container>
         </v-col>
@@ -50,10 +38,7 @@ export default {
         return {
             title: 'CONTACT',
             content: 'Réservez un créneau horaire afin d\'échanger sur votre projet - 30mn',
-            btn: 'Prise de contact',
-            mdi: 'mdi-account-check-outline',
-            link: '/contact',
-
+            mdi: 'mdi-account-check-outline'
         }
     }
    

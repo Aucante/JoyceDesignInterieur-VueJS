@@ -50,7 +50,7 @@
                 <v-divider></v-divider>
                 <v-subheader class="title ml-4 mb-2">MENU</v-subheader>
                 <v-list-item-group color="light">
-                    <v-list-item class="goldText" v-for="item in items" :key="item.text" router :to="item.link" >
+                    <v-list-item class="goldText" v-for="item in items" :key="item.text" router :to="item.link">
                         <v-list-item-icon>
                             <v-icon v-text="item.icon"></v-icon>
                         </v-list-item-icon>
