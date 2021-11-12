@@ -2,19 +2,21 @@
     <div id="contact">
     <ContactHeader />
     <ContactDetails />
-    <Contact />
     <Footer />
     </div>
 </template>
 
 <script>
+import ContactHeader from '@/components/Contact/ContactHeader'
+import ContactDetails from '@/components/Contact/ContactDetails'
+import Footer from '@/components/Footer'
 
   export default {
-    name: 'Home',
+    name: 'Contact',
     components: {
-    ContactHeader: () => import('@/components/Contact/ContactHeader'),
-    ContactDetails: () => import('@/components/Contact/ContactDetails'),
-    Footer: () => import('@/components/Footer'),
+    ContactHeader,
+    ContactDetails,
+    Footer
   },
   }
 </script>

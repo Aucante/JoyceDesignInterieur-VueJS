@@ -86,7 +86,7 @@
   export default {
     data: () => ({
       title: 'AVIS CLIENTS',
-      length: 3,
+      length: 4,
       onboarding: 0,
     }),
     computed: {

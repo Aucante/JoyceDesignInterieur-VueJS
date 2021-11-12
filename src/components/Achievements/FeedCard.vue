@@ -48,8 +48,6 @@
                     </v-card-text>
 
                     <v-card-actions>
-                    
-
                     <v-btn
                         color="grey darken-4 white--text"
                         class="rounded-0 pa-4"
@@ -68,27 +66,10 @@
 
 <script>
 
-import Image1 from './../../assets/Images/image1.jpg'
-import Image2 from './../../assets/Images/image2.jpg'
-import Image4 from './../../assets/Images/image4.jpg'
-import Image5 from './../../assets/Images/image5.jpg'
-import Image6 from './../../assets/Images/image6.jpg'
-import Image7 from './../../assets/Images/image7.jpg'
-
-
   export default {
-      
-      data() {
-          return {
-              
-              cards: [
-                  {title: 'Projet Palermo', content: 'Ambiance sicilienne', src: Image1},
-                  {title: 'Projet Florencia', content: 'Ambiance toscane', src: Image2},
-                  {title: 'Projet Cagliari', content: 'Voyage en sardaigne', src: Image4},
-                  {title: 'Projet Milano', content: 'Voyage en lombardie', src: Image5},
-                  {title: 'Projet Lazio', content: 'Ambiance romaine', src: Image6},
-                  {title: 'Projet Napoli', content: 'Ambiance napolitaine', src: Image7}
-              ]
+      computed: {
+          cards() {
+              return this.$store.getters.cards
           }
       }
 

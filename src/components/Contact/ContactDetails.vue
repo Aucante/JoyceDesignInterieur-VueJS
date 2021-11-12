@@ -26,10 +26,10 @@
                 class="d-flex justify-center mb-4"
                 >{{contact.icon}}</v-icon>
                 <div>
-                    <p class="d-flex justify-center title font-weight-medium">{{contact.title}}</p>
+                    <p class="d-flex justify-center headline font-weight-medium">{{contact.title}}</p>
                 </div>
                 <div class="mt-7">
-                <p class="d-flex justify-center body-2 font-weight-light">{{contact.content}}</p>
+                <p class="d-flex justify-center subtitle-1 font-weight-light">{{contact.content}}</p>
                 </div>
                 </v-container>
                 <v-divider 
