@@ -34,7 +34,7 @@
                 color="grey darken-4 white--text"
                 class="rounded-0 pa-5 mb-8"
                 elevation="5"
-                router :to="'/about'"
+                router :to="{name: link}"
                 >
                 {{btn}}
                 </v-btn>
@@ -51,6 +51,7 @@ export default {
         return {
             title: 'A PROPOS',
             btn: 'En savoir plus',
+            link: 'About',
             content: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur fugiat facere quam vitae? Quisquam harum nulla odit fuga consequuntur atque. Suscipit rerum voluptatibus minima obcaecati distinctio fuga harum omnis blanditiis!',
             length: 3,
         }

@@ -43,6 +43,7 @@
                 color="grey darken-4 white--text"
                 class="rounded-0 pa-3 mb-8"
                 elevation="5"
+                router :to="{name: link}"
                 >
                 {{btn}}
                 </v-btn>
@@ -59,6 +60,7 @@ export default {
         return {
             title: 'PRESTATIONS',
             btn: 'Découverte des prestations',
+            link: 'Services'
         }
     },
     computed: {

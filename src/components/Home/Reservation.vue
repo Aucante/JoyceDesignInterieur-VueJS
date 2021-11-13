@@ -32,7 +32,7 @@
                     color="grey darken-4 white--text"
                     class="rounded-0 pa-5 mt-n12"
                     elevation="5"
-                    router :to="link"
+                    router :to="{name: link}"
                     >
                 {{btn}}
                 </v-btn>
@@ -52,7 +52,7 @@ export default {
             content: 'Réservez un créneau horaire afin d\'échanger sur votre projet - 30mn',
             btn: 'Prise de contact',
             mdi: 'mdi-account-check-outline',
-            link: '/contact',
+            link: 'Contact',
 
         }
     }

@@ -24,19 +24,13 @@
                     </v-img>
                     <v-card-text class="text--primary">
                     <div
-                    class="d-flex justify-center display-1"
+                    class="d-flex justify-center display-1 mt-5"
                     >{{service.title}}</div>
                     </v-card-text>
                     <v-card-actions
                     class="d-flex justify-center"
                     >
-                    <v-btn
-                    color="grey darken-4 white--text"
-                    class="rounded-0 pa-4 mt-n4"
-                    elevation="5"
-                    >
-                    {{btn}}
-                    </v-btn>
+                    
                     </v-card-actions>
                 </v-card>
                 </v-col>
@@ -47,11 +41,7 @@
 <script>
 
   export default {
-      data() {
-          return {
-          btn: 'Découvrir'
-          }
-      },
+      
       computed: {
           services() {
               return this.$store.getters.servicesWhithoutOption

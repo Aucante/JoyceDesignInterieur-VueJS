@@ -27,7 +27,7 @@
                             cols="12"
                             >
                             <v-expansion-panels 
-                            focusable
+                            accordion
                             >
                                 <v-expansion-panel
                                 v-if="service.amountContent >= 1"

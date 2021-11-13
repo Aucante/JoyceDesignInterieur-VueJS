@@ -1,14 +1,22 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <h1>This is an about page</h1>
-    <h1>This is an about page</h1>
+    <AboutContainer />
+    <SlideCard />
+    <Footer />
   </div>
 </template>
 
 <script>
+import AboutContainer from '@/components/About/AboutContainer'
+import SlideCard from '@/components/Home/SlideCard'
+import Footer from '@/components/Footer'
 
 export default {
-  name: 'About'
+  name: 'About',
+  components: {
+    AboutContainer,
+    SlideCard,
+    Footer
+  },
 }
 </script>
