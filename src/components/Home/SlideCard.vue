@@ -39,6 +39,7 @@
                                     class="rounded-0 pa-10 headline"
                                     elevation="5"
                                     x-large
+                                    router :to="{name: 'Achievement', params: {id: card.id}}"
                                 >
                                     Découvrir
                                 </v-btn>
@@ -58,6 +59,7 @@
                                 color="grey darken-4 white--text"
                                 class="rounded-0 pa-4"
                                 elevation="5"
+                                router :to="{name: 'Achievement', params: {id: card.id}}"
                             >
                                 Découvrir
                             </v-btn>

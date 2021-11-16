@@ -8,44 +8,67 @@ import Image5 from './../assets/Images/image5.jpg'
 import Image6 from './../assets/Images/image6.jpg'
 import Image7 from './../assets/Images/image7.jpg'
 
-import Image1xl from './../assets/Images/image4xl.jpg'
-import Image2xl from './../assets/Images/image10xl.jpg'
+import Image1xl from './../assets/Images/image7xl.jpg'
+import Image2xl from './../assets/Images/image20xl.jpg'
+
+import Plan1 from './../assets/Images/plan/plan1.png'
+import Plan2 from './../assets/Images/plan/plan2.png'
+import Plan3 from './../assets/Images/plan/plan3.png'
+import Plan4 from './../assets/Images/plan/plan4.png'
+import Plan5 from './../assets/Images/plan/plan5.png'
+import Plan6 from './../assets/Images/plan/plan6.png'
+import Plan7 from './../assets/Images/plan/plan7.png'
+import Plan8 from './../assets/Images/plan/plan8.png'
+import Plan9 from './../assets/Images/plan/plan9.png'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    currentCard: {},
     cards: [
       {
-        title: 'Projet Palermo', 
+      id: 1,
+      title: 'Projet Palermo', 
       content: 'Ambiance sicilienne', 
-      src: Image1
+      description: 'Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé. Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé',
+      src: Image1,
+      plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
-        title: 'Projet Florencia', 
+      id: 2,
+      title: 'Projet Florencia', 
       content: 'Ambiance toscane', 
-      src: Image2
+      src: Image2,
+      plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
-        title: 'Projet Cagliari', 
+      id: 3,
+      title: 'Projet Cagliari', 
       content: 'Voyage en sardaigne', 
-      src: Image4
+      src: Image4,
+      plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
-        title: 'Projet Milano',
-       content: 'Voyage en lombardie', 
-       src: Image5
+      id: 4,
+      title: 'Projet Milano',
+      content: 'Voyage en lombardie', 
+      src: Image5,
+      plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
-        title: 
-        'Projet Lazio', 
-        content: 'Ambiance romaine', 
-        src: Image6
+      id: 5,
+      title: 'Projet Lazio', 
+      content: 'Ambiance romaine', 
+      src: Image6,
+      plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
-        title: 'Projet Napoli',
-       content: 'Ambiance napolitaine', 
-       src: Image7
+      id: 6,
+      title: 'Projet Napoli',
+      content: 'Ambiance napolitaine', 
+      src: Image7,
+      plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       }
     ],
     services: [
@@ -200,11 +223,39 @@ export default new Vuex.Store({
     contacts: (state) => {
       return state.contacts
     },
+    getCurrentCard(state) {
+      return state.currentCard;
+    },
+    getCardById: (state) => (id) => {
+      return state.cards.find(card => card.id === id)
+    }
 
   },
   mutations: {
+    setCurrentCard(state, card) {
+      state.currentCard = card;
+    },
+    setCurrentCardVersionMutation (state, cardId) {
+      let cardFound = {};
+      state.cards.forEach((card) => {
+        if(cardId == card.id) {
+          cardFound = card;
+        }
+      });
+      state.currentCard = cardFound;
+    }
   },
   actions: {
+    // Pour BDD
+    setCurrentCardAction ({commit, state}, cardId) {
+      let cardFound = {};
+      state.cards.forEach((card) => {
+        if(cardId == card.id) {
+          cardFound == card;
+        }
+      });
+      commit('setCurrentCard', cardFound);
+    }
   },
   modules: {
   }

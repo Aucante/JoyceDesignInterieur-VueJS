@@ -10,6 +10,7 @@
                     v-for="(service, i) in services"
                     :key="i"
                     cols="12"
+                    sm="6"
                     md="3"
                     lg="3"
                     xl="3"

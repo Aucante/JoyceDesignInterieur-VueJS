@@ -59,7 +59,7 @@
 <script>
 import Image1 from './../../assets/Images/image5xl.jpg'
 import Image2 from './../../assets/Images/image4xl.jpg'
-import Image3 from './../../assets/Images/image10xl.jpg'
+import Image3 from './../../assets/Images/image20xl.jpg'
 
   export default {
     data () {
@@ -74,10 +74,10 @@ import Image3 from './../../assets/Images/image10xl.jpg'
         ],
         slides: [
           {
-            src: Image1, content: 'SUBLIMEZ VOTRE INTERIEUR', colorText: 'white', btn: 'Découvrir'
+            src: Image2, content: 'SUBLIMEZ VOTRE INTERIEUR', colorText: 'white', btn: 'Découvrir'
           },
           {
-            src: Image2, content: 'DECOUVREZ NOS REALISATIONS', colorText: 'white', btn: 'Découvrir'
+            src: Image1, content: 'DECOUVREZ NOS REALISATIONS', colorText: 'white', btn: 'Découvrir'
           },
           {
             src: Image3, content: 'PRISE DE CONTACT', colorText: 'blue-grey darken-4', btn: 'Contact'
