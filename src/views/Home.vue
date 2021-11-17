@@ -3,6 +3,7 @@
     <Carousel />
     <About />
     <SlideCard />
+    <Carousel3d />
     <Ratings />
     <Products />
     <Reservation />
@@ -20,6 +21,7 @@
     About: () => import('@/components/Home/About'),
     Footer: () => import('@/components/Footer'),
     SlideCard: () => import('@/components/Home/SlideCard'),
+    Carousel3d: () => import('@/components/Home/Carousel3d'),
     Circular: () => import('@/components/Home/Circular'),
     Products: () => import('@/components/Home/Products'),
     Reservation: () => import('@/components/Home/Reservation'),
