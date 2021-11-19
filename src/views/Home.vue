@@ -2,12 +2,11 @@
     <div id="home">
     <Carousel />
     <About />
-    <SlideCard />
     <Carousel3d />
-    <Ratings />
-    <Products />
-    <Reservation />
     <Circular />
+    <Products />
+    <Ratings />
+    <Reservation />
     <Footer />
     </div>
 </template>
@@ -20,7 +19,6 @@
     Carousel: () => import('@/components/Home/Carousel'),  
     About: () => import('@/components/Home/About'),
     Footer: () => import('@/components/Footer'),
-    SlideCard: () => import('@/components/Home/SlideCard'),
     Carousel3d: () => import('@/components/Home/Carousel3d'),
     Circular: () => import('@/components/Home/Circular'),
     Products: () => import('@/components/Home/Products'),

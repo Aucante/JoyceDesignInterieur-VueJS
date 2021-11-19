@@ -208,6 +208,7 @@ export default new Vuex.Store({
     ],
   },
   getters: {
+    // GETTERS state
     cards: (state) => {
       return state.cards
     },
@@ -223,11 +224,16 @@ export default new Vuex.Store({
     contacts: (state) => {
       return state.contacts
     },
+    // GETTER CARD -> Projets/réalisations
     getCurrentCard(state) {
       return state.currentCard;
     },
     getCardById: (state) => (id) => {
       return state.cards.find(card => card.id === id)
+    },
+    // GETTER SERVICES -> Prestations
+    getServiceById: (state) => (id) => {
+      return state.services.find(service => service.id === id)
     }
 
   },

@@ -5,10 +5,11 @@
         >
             <v-container fluid>
                 <p
-                class="d-flex justify-center display-1 font-weight-medium"
+                class="d-flex justify-center display-1 font--text font-weight-medium"
                 >{{title}}</p>
                 <v-divider></v-divider>
                 <v-icon 
+                color="icon"
                 size="90"
                 class="d-flex justify-center mt-4 mb-n7"
                 >{{mdi}}</v-icon>

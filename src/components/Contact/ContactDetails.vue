@@ -17,11 +17,12 @@
                 >
                 <v-container
                 class="justify-center px-5"
-                color="blue-grey lighten-5"
+                color="primary"
                 width="400"
                 outlined
                 >
                 <v-icon 
+                color="icon"
                 size="110"
                 class="d-flex justify-center mb-4"
                 >{{contact.icon}}</v-icon>
