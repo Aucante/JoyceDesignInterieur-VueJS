@@ -14,7 +14,7 @@ export default new Vuetify({
             icon: colors.brown.darken1, // #6D4C41
             font: colors.brown.darken3, // #4E342E
             btn: colors.brown.darken4, // #3E2723
-            btnSmall: colors.brown.lighten3, // #3E2723
+            btnSmall: colors.brown.lighten4, // #3E2723
             circular: colors.grey.darken2,  //#616161
 
           },

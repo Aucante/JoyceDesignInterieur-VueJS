@@ -47,7 +47,13 @@ const routes = [
     path: '/prestations',
     name: 'Services',
     component: () => import(/* webpackChunkName: "nouveau" */ '../views/Services.vue')
-  }
+  },
+  {
+    path: '/prestation/:id',
+    name: 'Service',
+    props: true,
+    component: () => import(/* webpackChunkName: "nouveau" */ '../views/Service.vue')
+  },
 ]
 
 const router = new VueRouter({

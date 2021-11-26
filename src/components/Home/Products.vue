@@ -1,6 +1,8 @@
 <template>
   <v-container fluid class="primary">
-    <p class="d-flex justify-center display-1 my-8 font--text font-weight-medium">
+    <p
+      class="d-flex justify-center display-1 my-8 font--text font-weight-medium"
+    >
       {{ title }}
     </p>
     <v-divider></v-divider>
@@ -34,7 +36,10 @@
               <p class="d-flex justify-start body-2 font-weight-light">
                 - {{ service.content1 }}
               </p>
-              <p class="d-flex justify-start body-2 font-weight-light">
+              <p
+                v-if="service.content2 != null"
+                class="d-flex justify-start body-2 font-weight-light"
+              >
                 - {{ service.content2 }}
               </p>
               <p

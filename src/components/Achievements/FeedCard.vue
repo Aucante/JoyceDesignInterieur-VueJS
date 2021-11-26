@@ -1,7 +1,9 @@
 <template>
   <v-container fluid>
-    <h1 class="d-flex justify-center display-1 ma-8 font--text font-weight-medium">
-    {{title}}
+    <h1
+      class="d-flex justify-center display-1 ma-8 font--text font-weight-medium"
+    >
+      {{ title }}
     </h1>
     <v-divider></v-divider>
     <v-row>
@@ -64,8 +66,8 @@
 export default {
   data() {
     return {
-        title: 'MES PROJETS',
-        btn: "Découvrir",
+      title: "MES PROJETS",
+      btn: "Découvrir",
     };
   },
   props: ["id"],

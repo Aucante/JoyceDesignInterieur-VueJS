@@ -1,10 +1,18 @@
 <template>
   <v-container>
     <v-container fluid>
-      <h1 class="d-flex justify-center display-1 ma-8 font--text font-weight-medium">
-    {{title}}
-    </h1>
-    <v-divider></v-divider>
+      <h1
+        class="
+          d-flex
+          justify-center
+          display-1
+          ma-8
+          font--text font-weight-medium
+        "
+      >
+        {{ title }}
+      </h1>
+      <v-divider></v-divider>
       <v-row>
         <v-col v-for="(service, i) in services" :key="i" cols="12" md="6">
           <v-container>
@@ -14,16 +22,26 @@
               class="d-flex justify-center mb-10"
               >{{ service.mdi }}</v-icon
             >
-            <p class="d-flex justify-center display-1 font--text font-weight-medium mb-5">
+            <p
+              class="
+                d-flex
+                justify-center
+                display-1
+                font--text font-weight-medium
+                mb-5
+              "
+            >
               {{ service.title }}
             </p>
             <v-divider></v-divider>
             <v-col cols="12" class="d-flex justify-center">
               <v-btn
                 small
-                color="btnSmall white--text"
-                class="mt-5 rounded-lg"
+                color="btnSmall secondary--text font-weight-bold"
+                class="mt-5 rounded-0"
                 elevation="3"
+                router
+                :to="{ name: 'Service', params: { id: service.id } }"
               >
                 {{ btn }}
               </v-btn>
@@ -33,10 +51,20 @@
                 <v-col cols="12">
                   <v-expansion-panels accordion>
                     <v-expansion-panel v-if="service.amountContent >= 1">
-                      <v-expansion-panel-header class="body-1 font-weight-bold">
+                      <v-expansion-panel-header
+                        v-if="service.price1 != null"
+                        class="body-1 font-weight-bold"
+                      >
                         {{ service.content1 }}
                         <v-spacer></v-spacer>
                         {{ service.price1 }}€
+                      </v-expansion-panel-header>
+                      <v-expansion-panel-header
+                        v-else
+                        class="body-1 font-weight-bold"
+                      >
+                        {{ service.content1 }}
+                        <v-spacer></v-spacer>
                       </v-expansion-panel-header>
                       <v-expansion-panel-content class="pa-4">
                         {{ service.description1 }}
@@ -97,7 +125,7 @@
 export default {
   data() {
     return {
-      title: 'PRESTATIONS',
+      title: "PRESTATIONS",
       btn: "En savoir plus",
     };
   },

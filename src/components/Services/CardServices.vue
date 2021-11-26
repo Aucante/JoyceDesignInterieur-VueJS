@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid id="backgroundContainer" class="py-10">
+  <v-container fluid class="hero">
     <v-row>
       <v-col
         cols="12"
@@ -11,13 +11,17 @@
         offset-xl="2"
         class="d-flex justify-center"
       >
-        <v-card color="brown lighten-5" class="mx-auto" outlined>
-          <v-img class="white--text align-end" height="200px" :src="image">
-          </v-img>
+        <v-card color="transparent" class="mx-auto" outlined>
           <v-card-text class="text--primary">
-            <div class="d-flex justify-center display-1 mt-5">{{ title }}</div>
+            <div class="d-flex justify-center display-2 mt-5 white--text">
+              {{ title }}
+            </div>
           </v-card-text>
-          <v-card-actions class="d-flex justify-center"> </v-card-actions>
+          <v-card-text class="text--primary">
+            <div class="d-flex justify-center title mt-5 white--text">
+              {{ subtitle }}
+            </div>
+          </v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -29,7 +33,8 @@ export default {
   data() {
     return {
       image: require("./../../assets/Images/image7xl.jpg"),
-      title: "NOS PRESTATIONS",
+      title: "PRESTATIONS",
+      subtitle: "Retrouvez toutes nos prestations",
     };
   },
   computed: {
@@ -42,6 +47,12 @@ export default {
 
 <style scoped>
 #backgroundContainer {
-  background-color: #EFEBE9;
+  background-color: #efebe9;
+}
+.hero {
+  background-size: cover;
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/Images/image7xl.jpg");
 }
 </style>

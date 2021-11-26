@@ -21,6 +21,8 @@ import Plan7 from './../assets/Images/plan/plan7.png'
 import Plan8 from './../assets/Images/plan/plan8.png'
 import Plan9 from './../assets/Images/plan/plan9.png'
 
+
+
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -73,6 +75,7 @@ export default new Vuex.Store({
     ],
     services: [
       {
+        id: 1,
         title: 
         'Prestations à la carte', 
         mdi: 'mdi-card-bulleted-outline', 
@@ -92,11 +95,17 @@ export default new Vuex.Store({
         price3: 99,
         price4: 149,
         price5: 279,
+        productImage1: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage2: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),
+        productImage3: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+        productImage4: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage5: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
         amountContent: 5, 
         isPackage: false,
         option: false
       },
       {
+        id: 2,
         title: 'Prestations au forfait', 
         mdi: 'mdi-file-table-box-multiple-outline', 
         image: Image2xl, 
@@ -115,51 +124,68 @@ export default new Vuex.Store({
         price3: 479,
         price4: null,
         price5: null,
+        productImage1: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage2: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage3: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage4: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage5: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
         amountContent: 3, 
         isPackage: true,
         option: false
       },
       {
-        title: 'Option 3D à la carte', 
+        id: 3,
+        title: 'Options 3D', 
         mdi: 'mdi-apple-keyboard-option', 
         content1: 'Plan d\'aménagement 3D', 
         content2: 'Rendu 360°', 
-        content3: null, 
-        content4: null, 
-        content5: null, 
+        content3: '3D version supplémentaire pièce simple', 
+        content4: '3D version supplémentaire pièce technique', 
+        content5: '3D version supplémentaire pièce multifonctions',  
         description1: 'Il s\'agit d\'un plan d\'aménagement 3D',
         description2: 'Il s\'agit d\'un rendu 360',
-        description3: null,
-        description4: null,
-        description5: null,
+        description3: 'Il s\'agit d\'un 3D version supplémentaire pièce simple',
+        description4: 'Il s\'agit d\'un 3D version supplémentaire pièce technique',
+        description5: 'Il s\'agit d\'un 3D version supplémentaure pièce multifonctions',
         price1: 59,
         price2: 49,
-        price3: null,
-        price4: null,
-        price5: null,
-        amountContent: 2,
+        price3: 79,
+        price4: 119,
+        price5: 219,
+        productImage1: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage2: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage3: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage4: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage5: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        amountContent: 5,
         isPackage: false,
         option: true
       },
       {
-        title: 'Option 3D au forfait', 
+        id: 4,
+        title: 'Coaching Déco', 
         mdi: 'mdi-lock-open-alert-outline', 
-        content1: '3D version supplémentaire pièce simple', 
-        content2: '3D version supplémentaire pièce technique', 
-        content3: '3D version supplémentaire pièce multifonctions', 
+        content1: 'Sur devis', 
+        content2: null,
+        content3: null, 
         content4: null, 
         content5: null, 
-        description1: 'Il s\'agit d\'un 3D version supplémentaire pièce simple',
-        description2: 'Il s\'agit d\'un 3D version supplémentaire pièce technique',
-        description3: 'Il s\'agit d\'un 3D version supplémentaure pièce multifonctions',
+        description1: 'Sur devis',
+        description2: null,
+        description3: null,
         description4: null,
         description5: null,
-        price1: 79,
-        price2: 119,
-        price3: 219,
+        price1: null,
+        price2: null,
+        price3: null,
         price4: null,
         price5: null,
-        amountContent: 3, 
+        productImage1: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage2: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage3: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage4: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        productImage5: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+        amountContent: 1, 
         isPackage: true,
         option: true
       },
@@ -228,6 +254,9 @@ export default new Vuex.Store({
     getCurrentCard(state) {
       return state.currentCard;
     },
+    getCurrentService(state) {
+      return state.currentService;
+    },
     getCardById: (state) => (id) => {
       return state.cards.find(card => card.id === id)
     },
@@ -249,6 +278,15 @@ export default new Vuex.Store({
         }
       });
       state.currentCard = cardFound;
+    },
+    setCurrentServiceVersionMutation (state, serviceId) {
+      let serviceFound = {};
+      state.services.forEach((service) => {
+        if(serviceId == service.id) {
+          serviceFound = service;
+        }
+      });
+      state.currentService = serviceFound;
     }
   },
   actions: {

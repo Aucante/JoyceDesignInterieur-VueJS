@@ -20,7 +20,7 @@
           >
             <div class="display-1">{{ asset.rating }}</div>
           </v-progress-circular>
-          <p class="d-flex justify-center title white--text font-weight-light">
+          <p class="d-flex justify-center title white--text font-weight-light pt-5">
             {{ asset.title }}
           </p>
           <v-divider></v-divider>

@@ -1,18 +1,19 @@
 <template>
-    <div id="services">
+  <div id="services">
+    <CardServices />
     <ServicesInformations />
     <Footer />
-    </div>
+  </div>
 </template>
 
 <script>
-
-  export default {
-    name: 'Services',
-    components: {
-    CardServices: () => import('@/components/Services/CardServices'),
-    ServicesInformations: () => import('@/components/Services/ServicesInformations'),
-    Footer: () => import('@/components/Footer'),
+export default {
+  name: "Services",
+  components: {
+    CardServices: () => import("@/components/Services/CardServices"),
+    ServicesInformations: () =>
+      import("@/components/Services/ServicesInformations"),
+    Footer: () => import("@/components/Footer"),
   },
-  }
+};
 </script>
