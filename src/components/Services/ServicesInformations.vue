@@ -50,64 +50,28 @@
               <v-row>
                 <v-col cols="12">
                   <v-expansion-panels accordion>
-                    <v-expansion-panel v-if="service.amountContent >= 1">
+                    <v-expansion-panel
+                      v-for="(product, i) in service.products"
+                      :key="i"
+                    >
                       <v-expansion-panel-header
-                        v-if="service.price1 != null"
+                        v-if="service.price != null"
                         class="body-1 font-weight-bold"
                       >
-                        {{ service.content1 }}
+                        {{ product.content }}
                         <v-spacer></v-spacer>
-                        {{ service.price1 }}€
+                        {{ product.price }}€
                       </v-expansion-panel-header>
                       <v-expansion-panel-header
                         v-else
                         class="body-1 font-weight-bold"
                       >
-                        {{ service.content1 }}
+                        {{ product.content }}
                         <v-spacer></v-spacer>
+                        {{ product.price }}
                       </v-expansion-panel-header>
                       <v-expansion-panel-content class="pa-4">
-                        {{ service.description1 }}
-                      </v-expansion-panel-content>
-                    </v-expansion-panel>
-                    <v-expansion-panel v-if="service.amountContent >= 2">
-                      <v-expansion-panel-header class="body-1 font-weight-bold">
-                        {{ service.content2 }}
-                        <v-spacer></v-spacer>
-                        {{ service.price2 }}€
-                      </v-expansion-panel-header>
-                      <v-expansion-panel-content class="pa-4">
-                        {{ service.description2 }}
-                      </v-expansion-panel-content>
-                    </v-expansion-panel>
-                    <v-expansion-panel v-if="service.amountContent >= 3">
-                      <v-expansion-panel-header class="body-1 font-weight-bold">
-                        {{ service.content3 }}
-                        <v-spacer></v-spacer>
-                        {{ service.price3 }}€
-                      </v-expansion-panel-header>
-                      <v-expansion-panel-content class="pa-4">
-                        {{ service.description3 }}
-                      </v-expansion-panel-content>
-                    </v-expansion-panel>
-                    <v-expansion-panel v-if="service.amountContent >= 4">
-                      <v-expansion-panel-header class="body-1 font-weight-bold">
-                        {{ service.content4 }}
-                        <v-spacer></v-spacer>
-                        {{ service.price4 }}€
-                      </v-expansion-panel-header>
-                      <v-expansion-panel-content class="pa-4">
-                        {{ service.description4 }}
-                      </v-expansion-panel-content>
-                    </v-expansion-panel>
-                    <v-expansion-panel v-if="service.amountContent >= 5">
-                      <v-expansion-panel-header class="body-1 font-weight-bold">
-                        {{ service.content5 }}
-                        <v-spacer></v-spacer>
-                        {{ service.price5 }}€
-                      </v-expansion-panel-header>
-                      <v-expansion-panel-content class="pa-4">
-                        {{ service.description5 }}
+                        {{ product.description }}
                       </v-expansion-panel-content>
                     </v-expansion-panel>
                   </v-expansion-panels>

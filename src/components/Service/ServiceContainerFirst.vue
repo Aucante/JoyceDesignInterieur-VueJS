@@ -18,7 +18,7 @@
             >
               <v-card-text class="primary--text">
                 <div class="d-flex justify-center display-1 py-5">
-                  {{ service.content1 }}
+                  {{ service.product.content[1] }}
                 </div>
                 <div class="d-flex justify-center">
                   {{ service.description1 }}
