@@ -1,8 +1,11 @@
 <template>
   <div id="service">
-    <ServiceContainerFirst v-bind:service="service" />
-    <ServiceContainerSecond v-bind:service="service" />
-    <ServiceContainerThird v-bind:service="service" />
+    <ServiceContainer
+      v-for="(product, i) in products"
+      :key="i"
+      v-bind:service="service"
+      v-bind:product="product"
+    />
     <Footer />
   </div>
 </template>
@@ -10,20 +13,17 @@
 <script>
 import Toolbar from "@/components/Toolbar";
 import Footer from "@/components/Footer";
-import ServiceContainerFirst from "@/components/Service/ServiceContainerFirst";
-import ServiceContainerSecond from "@/components/Service/ServiceContainerSecond";
-import ServiceContainerThird from "@/components/Service/ServiceContainerThird";
-
+import ServiceContainer from "@/components/Service/ServiceContainer";
 export default {
   name: "Service",
   components: {
     Toolbar,
-    ServiceContainerFirst,
-    ServiceContainerSecond,
-    ServiceContainerThird,
+    ServiceContainer,
     Footer,
   },
-  props: ["id"],
+  props: {
+    id: Number,
+  },
 
   created() {
     this.$store.commit("setCurrentServiceVersionMutation", this.id);
@@ -33,6 +33,9 @@ export default {
     service: function () {
       console.log(this.$store.getters.getCurrentService);
       return this.$store.getters.getCurrentService;
+    },
+    products: function () {
+      return this.service.products;
     },
   },
 };

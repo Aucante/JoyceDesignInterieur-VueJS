@@ -86,27 +86,37 @@ export default new Vuex.Store({
             content: 'Shopping list', 
             description: 'Il s\'agit d\'une shopping list', 
             price: 79, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),},
+            image: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            position: 'left'
+          },
           {
             content: 'Planche d\'ambiance', 
             description: 'Il s\'agit d\'une planche d\'ambiance', 
             price: 89, 
-            productImage: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),},
+            image: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),
+            position: 'right'
+          },
           {
             content: 'Modélisation 3D - pièce simple / technique / multifonctions',  
             description: 'Il s\'agit d\'une modélisation 3D pour pièce simple', 
             price: 99, 
-            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png')},
+            image: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+            position: 'left'
+          },
           {
             content: 'Modélisation 3D - pièce technique', 
             description: 'Il s\'agit d\'une modélisation 3D pour une pièce technique', 
             price: 149, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg')},
+            image: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            position: 'right'
+          },
           {
             content: 'Modélisation 3D - pièce multifonctions', 
             description: 'Il s\'agit d\'une modélisation 3D pour une pièce multifonction', 
             price: 279, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg')},
+            image: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            position: 'left'
+          },
         ],
         isPackage: false,
         option: false
@@ -121,17 +131,23 @@ export default new Vuex.Store({
             content: 'Forfait pièce simple', 
             description: 'Il s\'agit d\'un forfait pièce simple', 
             price: 319, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),},
+            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            position: 'left'
+          },
           {
             content: 'Forfait pièce technique', 
             description: 'Il s\'agit d\'un forfait pièce technique', 
             price: 369, 
-            productImage: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),},
+            productImage: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),
+            position: 'right'
+          },
           {
             content: 'Forfait pièce multifonctions',  
             description: 'Il s\'agit d\'un forfait pièce multifonctions', 
             price: 479, 
-            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png')},
+            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+            position: 'left'
+          },
         ],
         isPackage: true,
         option: false
@@ -145,27 +161,37 @@ export default new Vuex.Store({
             content: 'Plan d\'aménagement 3D', 
             description: 'Il s\'agit d\'un plan d\'aménagement 3D', 
             price: 59, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),},
+            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            position: 'left'
+          },
           {
             content: 'Rendu 360°', 
             description: 'Il s\'agit d\'un rendu 360', 
             price: 49, 
-            productImage: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),},
+            productImage: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),
+            position: 'right'
+          },
           {
             content: '3D version supplémentaire pièce simple',  
             description: 'Il s\'agit d\'un 3D version supplémentaire pièce simple', 
             price: 79, 
-            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png')},
+            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+            position: 'left'
+          },
           {
             content: '3D version supplémentaire pièce technique', 
             description: 'Il s\'agit d\'un 3D version supplémentaire pièce technique', 
             price: 119, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg')},
+            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            position: 'right'
+          },
           {
             content: '3D version supplémentaire pièce multifonctions', 
             description: 'Il s\'agit d\'un 3D version supplémentaure pièce multifonctions', 
             price: 219, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg')},
+            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            position: 'left'
+          },
         ],
         isPackage: false,
         option: true
@@ -179,7 +205,9 @@ export default new Vuex.Store({
             content: 'Sur devis', 
             description: 'Sur devis', 
             price: null, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),},
+            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            position: 'left'
+          },
           ],
         isPackage: true,
         option: true
