@@ -84,35 +84,35 @@ export default new Vuex.Store({
         products: [
           {
             content: 'Shopping list', 
-            description: 'Il s\'agit d\'une shopping list', 
+            description: 'Il s\'agit d\'une shopping list lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', 
             price: 79, 
             image: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
             position: 'left'
           },
           {
             content: 'Planche d\'ambiance', 
-            description: 'Il s\'agit d\'une planche d\'ambiance', 
+            description: 'Il s\'agit d\'une planche d\'ambiance, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', 
             price: 89, 
             image: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),
             position: 'right'
           },
           {
-            content: 'Modélisation 3D - pièce simple / technique / multifonctions',  
-            description: 'Il s\'agit d\'une modélisation 3D pour pièce simple', 
+            content: 'Modélisation 3D - pièce simple',  
+            description: 'Il s\'agit d\'une modélisation 3D pour pièce simple lorem ipsum lorem ipsum ', 
             price: 99, 
             image: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
             position: 'left'
           },
           {
             content: 'Modélisation 3D - pièce technique', 
-            description: 'Il s\'agit d\'une modélisation 3D pour une pièce technique', 
+            description: 'Il s\'agit d\'une modélisation 3D pour une pièce technique lorem ipsum ', 
             price: 149, 
-            image: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            image: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
             position: 'right'
           },
           {
             content: 'Modélisation 3D - pièce multifonctions', 
-            description: 'Il s\'agit d\'une modélisation 3D pour une pièce multifonction', 
+            description: 'Il s\'agit d\'une modélisation 3D pour une pièce multifonction lorem ipsum lorem ', 
             price: 279, 
             image: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
             position: 'left'

@@ -37,7 +37,7 @@
             <v-col cols="12" class="d-flex justify-center">
               <v-btn
                 small
-                color="btnSmall secondary--text font-weight-bold"
+                color="icon white--text font-weight-bold"
                 class="mt-5 rounded-0"
                 elevation="3"
                 router

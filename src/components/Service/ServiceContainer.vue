@@ -1,31 +1,35 @@
 <template>
-  <v-container v-if="product.position == 'left'" fluid class="primary px-15">
+  <v-container v-if="product.position == 'left'" fluid class="circular pa-15">
     <v-row>
       <v-col
         cols="12"
-        sm="8"
-        md="8"
-        lg="8"
-        xl="8"
+        sm="6"
+        md="6"
+        lg="6"
+        xl="6"
         class="d-flex justify-center"
       >
         <v-row>
           <v-col cols="12" class="d-flex justify-center">
             <v-card
-              class="d-flex align-start mx-auto transparent"
-              width="800"
+              class="d-flex align-center mx-auto mt-10 transparent"
+              width="500"
               outlined
             >
-              <v-card-text class="secondary--text">
-                <div class="d-flex justify-center display-1 py-5">ok</div>
-                <div class="d-flex justify-center">{{ product.content }}</div>
+              <v-card-text>
+                <div class="d-flex justify-center display-3 white--text py-5">
+                  {{ product.content }}
+                </div>
+                <div class="d-flex justify-center white--text title">
+                  {{ product.description }}
+                </div>
               </v-card-text>
             </v-card>
           </v-col>
           <v-col cols="12" class="d-flex justify-center">
             <v-btn
-              color="circular primary--text"
-              class="rounded-0 pa-4 mb-8"
+              color="primary circular--text"
+              class="rounded-0 pa-4 mb-15"
               router
               :to="{ name: 'Contact' }"
             >
@@ -36,56 +40,70 @@
       </v-col>
       <v-col
         cols="12"
-        sm="4"
-        md="4"
-        lg="4"
-        xl="4"
+        sm="6"
+        md="6"
+        lg="6"
+        xl="6"
         class="d-flex justify-center"
       >
-        <v-container class="d-flex align-center heightImage">
-          <v-img class="white--text align-end" :src="product.image"> </v-img>
-        </v-container>
+        <v-card class="d-flex align-center" width="800" elevation="15">
+          <v-img
+            class="white--text align-end"
+            :src="product.image"
+            :aspect-ratio="16 / 9"
+          >
+          </v-img>
+        </v-card>
       </v-col>
     </v-row>
   </v-container>
-  <v-container v-else fluid class="circular btnSmall px-15">
+  <v-container v-else fluid class="pa-15">
     <v-row>
       <v-col
         cols="12"
-        sm="4"
-        md="4"
-        lg="4"
-        xl="4"
+        sm="6"
+        md="6"
+        lg="6"
+        xl="6"
         class="d-flex justify-center"
       >
-        <v-container class="d-flex align-center heightImage">
-          <v-img class="white--text align-center" :src="product.image"> </v-img>
-        </v-container>
+        <v-card class="d-flex align-center" width="800" elevation="15">
+          <v-img
+            class="secondary--text align-end heightImage"
+            :src="product.image"
+            :aspect-ratio="16 / 9"
+          >
+          </v-img>
+        </v-card>
       </v-col>
       <v-col
         cols="12"
-        sm="8"
-        md="8"
-        lg="8"
-        xl="8"
+        sm="6"
+        md="6"
+        lg="6"
+        xl="6"
         class="d-flex justify-center"
       >
         <v-row>
           <v-col cols="12" class="d-flex justify-center">
             <v-card
-              class="d-flex align-start mx-auto transparent"
-              width="800"
+              class="d-flex align-center mx-auto mt-10 transparent"
+              width="500"
               outlined
             >
-              <v-card-text class="primary--text">
-                <div class="d-flex justify-center display-1 py-5">ok</div>
-                <div class="d-flex justify-center">{{ product.content }}</div>
+              <v-card-text class="circular--text">
+                <div class="d-flex justify-center display-3 py-5">
+                  {{ product.content }}
+                </div>
+                <div class="d-flex justify-center title pt-4">
+                  {{ product.description }}
+                </div>
               </v-card-text>
             </v-card>
           </v-col>
           <v-col cols="12" class="d-flex justify-center">
             <v-btn
-              color="btnSmall secondary--text"
+              color="circular white--text"
               class="rounded-0 pa-4 mb-8"
               router
               :to="{ name: 'Contact' }"
