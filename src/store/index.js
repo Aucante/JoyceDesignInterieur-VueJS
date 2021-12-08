@@ -36,41 +36,64 @@ export default new Vuex.Store({
       content: 'Ambiance sicilienne', 
       description: 'Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé. Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé',
       src: Image1,
+      style: 'scandinave',
+      ambiance: 'confort',
+      decoration: 'laqué',
       plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
       id: 2,
       title: 'Projet Florencia', 
       content: 'Ambiance toscane', 
+      description: 'Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé. Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé',
       src: Image2,
+      style: 'Méditeranéen',
+      ambiance: 'rustique',
+      decoration: 'bois',
       plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
       id: 3,
       title: 'Projet Cagliari', 
       content: 'Voyage en sardaigne', 
+      description: 'Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé. Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé',
       src: Image4,
+      style: 'style',
+      ambiance: 'ambiance',
+      decoration: 'decoration',
       plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
       id: 4,
       title: 'Projet Milano',
       content: 'Voyage en lombardie', 
+      description: 'Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé. Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé',
       src: Image5,
+      style: 'style',
+      ambiance: 'ambiance',
+      decoration: 'decoration',
       plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
       id: 5,
       title: 'Projet Lazio', 
       content: 'Ambiance romaine', 
+      description: 'Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé. Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé',
       src: Image6,
+      style: 'style',
+      ambiance: 'ambiance',
+      decoration: 'decoration',
       plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       },
       {
       id: 6,
       title: 'Projet Napoli',
       content: 'Ambiance napolitaine', 
+      description: 'Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé. Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé Cette ambiance intègre un large choix de couleurs ainsi qu\'une association des textures visant à promouvoir la clarté et la visibilité de la pièce. Nous avons un style très atypique et travaillé',
       src: Image7,
+      style: 'style',
+      ambiance: 'ambiance',
+      decoration: 'decoration',
       plan: [Plan1, Plan2, Plan3, Plan4, Plan5, Plan6, Plan7, Plan8, Plan9]
       }
     ],
@@ -79,7 +102,7 @@ export default new Vuex.Store({
         id: 1,
         title: 
         'Prestations à la carte', 
-        mdi: 'mdi-card-bulleted-outline', 
+        mdi: 'mdi-cards-outline', 
         image: Image1xl, 
         products: [
           {
@@ -124,7 +147,7 @@ export default new Vuex.Store({
       {
         id: 2,
         title: 'Prestations au forfait', 
-        mdi: 'mdi-file-table-box-multiple-outline', 
+        mdi: 'mdi-credit-card-multiple-outline', 
         image: Image2xl, 
         products: [
           {
@@ -155,7 +178,7 @@ export default new Vuex.Store({
       {
         id: 3,
         title: 'Options 3D', 
-        mdi: 'mdi-apple-keyboard-option', 
+        mdi: 'mdi-home-edit', 
         products: [
           {
             content: 'Plan d\'aménagement 3D', 
@@ -199,7 +222,7 @@ export default new Vuex.Store({
       {
         id: 4,
         title: 'Coaching Déco', 
-        mdi: 'mdi-lock-open-alert-outline', 
+        mdi: 'mdi-home-search-outline', 
         products: [
           {
             content: 'Sur devis', 

@@ -2,7 +2,6 @@
   <div class="achievement">
     <Card v-bind:card="card" />
     <Information v-bind:card="card" />
-    <v-divider></v-divider>
     <CarouselAchievement v-bind:card="card" />
     <Gallery v-bind:card="card" />
     <Footer />

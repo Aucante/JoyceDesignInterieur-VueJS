@@ -1,17 +1,17 @@
 <template>
-  <v-container id="backgroundContainer" fluid class="primary py-10">
+  <v-container id="backgroundContainer" fluid class="py-10">
     <v-row>
       <v-col
         cols="12"
         md="8"
-        lg="6"
-        xl="6"
+        lg="4"
+        xl="4"
         offset-md="2"
-        offset-lg="3"
-        offset-xl="3"
+        offset-lg="4"
+        offset-xl="4"
         class="d-flex justify-center"
       >
-        <v-card class="mx-auto rounded-0" elevation="15">
+        <v-card class="mx-auto rounded-0 primary" elevation="5">
           <v-img class="white--text align-end" height="200px" :src="card.src">
           </v-img>
           <v-card-text class="text--primary">

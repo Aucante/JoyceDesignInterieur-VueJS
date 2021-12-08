@@ -3,13 +3,23 @@
     <v-row class="my-10">
       <v-col cols="12">
         <v-container fluid>
-          <p class="d-flex justify-center display-1 font--text font-weight-medium">
+          <p
+            class="
+              d-flex
+              justify-center
+              display-1
+              font--text font-weight-medium
+            "
+          >
             {{ title }}
           </p>
           <v-divider></v-divider>
-          <v-icon color="icon" size="90" class="d-flex justify-center mt-4 mb-n7">{{
-            mdi
-          }}</v-icon>
+          <v-icon
+            color="icon"
+            size="90"
+            class="d-flex justify-center mt-4 mb-n7"
+            >{{ mdi }}</v-icon
+          >
           <v-row>
             <v-col cols="12">
               <v-container>
@@ -42,9 +52,9 @@ export default {
     return {
       title: "CONTACT",
       content:
-        "Réservez un créneau horaire afin d'échanger sur votre projet - 30mn",
+        "Réservez un créneau horaire afin d'échanger sur votre projet - 20mn",
       btn: "Prise de contact",
-      mdi: "mdi-account-check-outline",
+      mdi: "mdi-clock-time-nine-outline",
       link: "Contact",
     };
   },

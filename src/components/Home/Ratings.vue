@@ -13,8 +13,8 @@
         >
           <v-card color="transparent" height="200" outlined>
             <v-row class="fill-height" align="center" justify="center">
-              <v-icon color="icon" size="50">mdi-account</v-icon>
-              <v-card-text class="text-center title brown--text">
+              <v-icon color="icon" size="50">{{ mdi }}</v-icon>
+              <v-card-text class="text-center title font--text">
                 {{ customer.name }}
               </v-card-text>
               <v-rating
@@ -60,6 +60,7 @@ export default {
     title: "AVIS CLIENTS",
     length: 4,
     onboarding: 0,
+    mdi: "mdi-account",
   }),
   computed: {
     customers() {

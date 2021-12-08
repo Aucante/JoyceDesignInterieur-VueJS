@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="primary">
     <v-container fluid>
       <h1
         class="

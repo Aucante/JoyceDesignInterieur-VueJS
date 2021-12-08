@@ -1,5 +1,5 @@
 <template>
-  <v-row class="my-10">
+  <v-row class="py-10">
     <v-col cols="12">
       <v-container fluid>
         <p
@@ -34,8 +34,8 @@ export default {
     return {
       title: "CONTACT",
       content:
-        "Réservez un créneau horaire gratuitement afin d'échanger sur votre projet - 30mn",
-      mdi: "mdi-account-check-outline",
+        "Réservez un créneau horaire gratuitement afin d'échanger sur votre projet - 20mn",
+      mdi: "mdi-clock-time-nine-outline",
     };
   },
 };
