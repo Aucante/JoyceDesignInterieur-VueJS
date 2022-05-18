@@ -210,29 +210,29 @@ export default new Vuex.Store({
             content: 'Modélisation 3D - petite pièce',  
             description: 'Qu\'est-ce qu\'une petite pièce ? - Une entrée - Un WC. Je modélise en 3D une petite pièce de votre choix et vous transmets 5 rendus photos réalistes ainsi qu\'un compte-rendu Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
             price: 85, 
-            image: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+            image: require('./../assets/Images/Images Services/Modélisation 3D petite pièce.jpg'),
             position: 'left'
           },
           {
             content: 'Modélisation 3D - pièce simple',  
             description: 'Qu\'est-ce qu\'une pièce simple ? - Un salon/séjour - Une salle à manger - Une chambre - Un bureau. Je modélise en 3D une pièce simple de votre choix et vous transmets 5 rendus photos réalistes ainsi qu\'un compte-rendu. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
             price: 99, 
-            image: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
-            position: 'left'
+            image: require('./../assets/Images/Projet Lena/Rendu 9 jour OK.jpg'),
+            position: 'right'
           },
           {
             content: 'Modélisation 3D - pièce technique', 
             description: 'Qu\'est-ce qu\'une pièce technique ? - Une cuisine - Une salle de bain. Je modélise en 3D une pièce technique de votre choix et vous transmets 5 rendus photos réalistes ainsi qu\'un compte-rendu. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
             price: 149, 
-            image: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
-            position: 'right'
+            image: require('./../assets/Images/Images Services/Modélisation 3D pièce technique.jpg'),
+            position: 'left'
           },
           {
             content: 'Modélisation 3D - pièce multifonctions', 
             description: 'Qu\'est-ce qu\'une pièce multifonctions ? - Un salon/ séjour - Un séjour/ cuisine - Une suite parentale (chambre/ salle de bain). Je modélise en 3D une pièce multifonctions de votre choix et vous transmets 5 rendus photos réalistes ainsi qu\'un compte-rendu. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
             price: 199, 
-            image: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
-            position: 'left'
+            image: require('./../assets/Images/Projet Bastien/Rendu 1 OK.jpg'),
+            position: 'right'
           },
         ],
         isPackage: false,
@@ -246,37 +246,37 @@ export default new Vuex.Store({
         products: [
           {
             content: 'Forfait pièce simple', 
-            description: 'Il s\'agit d\'un forfait pièce simple', 
-            price: 319, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            description: 'Qu\'est-ce qu\'une pièce simple ?- Un salon/séjour- Une salle à manger - Une chambre - Un bureau. Ce forfait comprend : 2 planches d\'ambiance, 1 modélisation 3D, 1 plan d\'aménagement, 1 shopping list. Le forfait vous permet de bénéficier d\'une réduction tarifaire.', 
+            price: 339, 
+            image: require('./../assets/Images/Projet gabrielle/Rendu 10 OK.jpg'),
             position: 'left'
           },
           {
             content: 'Forfait pièce technique', 
-            description: 'Il s\'agit d\'un forfait pièce technique', 
-            price: 369, 
-            productImage: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),
+            description: 'Qu\'est-ce qu\'une pièce technique ? - Une cuisine - Une salle de bain. Ce forfait comprend : 2 planches d\'ambiance, 1 modélisation 3D, 1 plan d\'aménagement, 1 shopping list. Le forfait vous permet de bénéficier d\'une réduction tarifaire.', 
+            price: 389, 
+            image: require('./../assets/Images/Images Services/Forfait pièce techique.jpg'),
             position: 'right'
           },
           {
             content: 'Forfait pièce multifonctions',  
-            description: 'Il s\'agit d\'un forfait pièce multifonctions', 
-            price: 479, 
-            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+            description: 'Qu\'est-ce qu\'une pièce multifonctions ? - Un salon/ séjour - Un séjour/ cuisine - Une suite parentale (chambre/ salle de bain). Ce forfait comprend : 2 planches d\'ambiance, 1 modélisation 3D, 1 plan d\'aménagement, 1 shopping list. Le forfait vous permet de bénéficier d\'une réduction tarifaire.', 
+            price: 429, 
+            image: require('./../assets/Images/Projet Olivier/Rendu photo réaliste 1.jpg'),
             position: 'left'
           },
           {
             content: 'Formule maison complète maximum 100m2',  
             description: 'L\'aménagement et la décoration de votre maison/ appartement vous est difficile ? Confiez-moi votre projet. Toutes les pièces de votre intérieur seront réalisées. Je modélise en 3D toutes les pièces de votre logement et vous transmets 4 rendus photos réalistes par pièce ainsi qu\'un compte-rendu. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
             price: 349, 
-            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+            image: require('./../assets/Images/Images Services/Formule maison complète max 100m2.jpg'),
             position: 'right'
           },
           {
             content: 'Formule maison complète maximum 200m2',  
             description: 'L\'aménagement et la décoration de votre maison/ appartement vous est difficile ? Confiez-moi votre projet. Toutes les pièces de votre intérieur seront réalisées. Je modélise en 3D toutes les pièces de votre logement et vous transmets 4 rendus photos réalistes par pièce ainsi qu\'un compte-rendu. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
             price: 449, 
-            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+            image: require('./../assets/Images/Images Services/Formule maison complète max 200m2.jpg'),
             position: 'left'
           },
         ],
@@ -290,30 +290,30 @@ export default new Vuex.Store({
         products: [
           {
             content: 'Plan d\'aménagement 3D', 
-            description: 'Il s\'agit d\'un plan d\'aménagement 3D', 
+            description: 'En plus de votre modélisation en 3D, vous pouvez compléter cette prestation d\'un plan d\'aménagement en 3D. Ce plan vous permettra de reproduire à l\'identique votre décoration.', 
             price: 59, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
-            position: 'left'
+            image: require('./../assets/Images/Images Services/Plan aménagement 3D.jpg'),
+            position: 'right'
           },
           {
             content: '3D version supplémentaire pièce simple',  
-            description: 'Il s\'agit d\'un 3D version supplémentaire pièce simple', 
+            description: 'Vous hésitez entre 2 styles déco ? Vous avez des difficultés à trancher entre deux couleurs ? La modélisation 3D version supplémentaire est faite pour vous. Elle vous permettra de vous projeter et de comparer au mieux. Vous recevez 5 rendus supplémentaires de la même pièce.', 
             price: 79, 
-            productImage: require('./../assets/Prestations/PlanAmenagement/Rendu3D.png'),
+            image: require('./../assets/Images/Projet Agathe/Rendu 3 OK.jpg'),
             position: 'left'
           },
           {
             content: '3D version supplémentaire pièce technique', 
-            description: 'Il s\'agit d\'un 3D version supplémentaire pièce technique', 
-            price: 119, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            description: 'Vous hésitez entre 2 styles déco ? Vous avez des difficultés à trancher entre deux couleurs ? La modélisation 3D version supplémentaire est faite pour vous. Elle vous permettra de vous projeter et de comparer au mieux. Vous recevez 5 rendus supplémentaires de la même pièce.', 
+            price: 89, 
+            image: require('./../assets/Images/Images Services/Options 3D _ Modélisation 3D version supplémentaire pièce technique.jpg'),
             position: 'right'
           },
           {
             content: '3D version supplémentaire pièce multifonctions', 
-            description: 'Il s\'agit d\'un 3D version supplémentaure pièce multifonctions', 
-            price: 219, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            description: 'Vous hésitez entre 2 styles déco ? Vous avez des difficultés à trancher entre deux couleurs ? La modélisation 3D version supplémentaire est faite pour vous. Elle vous permettra de vous projeter et de comparer au mieux. Vous recevez 5 rendus supplémentaires de la même pièce.', 
+            price: 99, 
+            image: require('./../assets/Images/Projet Tivat/Rendu 14 OK.jpg'),
             position: 'left'
           },
         ],
@@ -329,7 +329,7 @@ export default new Vuex.Store({
             content: 'Home staging / valorisation immobilière', 
             description: 'Le home staging ou valorisation immobilière vous permet de vendre votre bien ou trouver un locataire plus rapidement et pourquoi pas déclencher un coup de coeur immobilier. Il consiste à rendre votre bien plus attractif et cela à moindre coût. Nous travaillerons ensemble sur la décoration, l\'aménagement, la disposition des meubles afin d\'embellir votre bien. Ce que vous retrouvez dans cette prestation : - 1 planche d\'ambiance afin de valider l\'ambiance générale - Modélisation 3D de la ou les pièces que vous souhaitez réaménager. Je vous transmets 5 rendus réalistes par pièce. - 1 compte rendu complet reprenant l\'ensemble du projet et des conseils personnalisés.', 
             price: null, 
-            productImage: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
+            image: require('./../assets/Images/Projet Olivier/Rendu photo réaliste 1.jpg'),
             position: 'left'
           },
           ],
@@ -341,22 +341,22 @@ export default new Vuex.Store({
       {
         name: 'Lea. J', 
         content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur. Je n\'hésiterais pas à refaire appel à vos services. Cordialement', 
-        rating: 4
+        rating: 5
       },
       {
         name: 'Lisa. B', 
       content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur.', 
-      rating: 3
+      rating: 5
       },
       {
         name: 'Martine. S', 
         content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur.', 
-        rating: 4
+        rating: 5
       },
       {
         name: 'Francisca. J', 
         content: 'Merci pour votre professionnalisme. Je suis très satisfaite d\'avoir fais appel à JoyceDesignInterieur.', 
-        rating: 4
+        rating: 5
       },
     ],
     contacts: [

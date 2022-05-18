@@ -33,8 +33,7 @@ export default {
   data() {
     return {
       title: "CONTACT",
-      content:
-        "Réservez un créneau horaire gratuitement afin d'échanger sur votre projet - 20mn",
+      content: "Un projet déco ? Echangeons ensemble !",
       mdi: "mdi-clock-time-nine-outline",
     };
   },

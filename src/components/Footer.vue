@@ -14,7 +14,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>JoyceDesignInterieur</strong>
+        {{ new Date().getFullYear() }} — <strong>JoyceInteriorDesigner</strong>
       </v-card-text>
     </v-card>
   </v-footer>

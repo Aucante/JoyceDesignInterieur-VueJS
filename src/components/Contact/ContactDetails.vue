@@ -17,7 +17,7 @@
             width="400"
             outlined
           >
-            <a v-bind:href="contact.href">
+            <a v-bind:href="contact.href" target="_blank">
               <v-icon
                 color="icon"
                 size="110"

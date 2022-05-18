@@ -44,9 +44,14 @@
         md="6"
         lg="6"
         xl="6"
-        class="d-flex justify-center"
+        class="d-flex align-center justify-center"
       >
-        <v-card class="d-flex align-center" width="800" elevation="15">
+        <v-card
+          class="d-flex align-center"
+          width="800"
+          height="400"
+          elevation="15"
+        >
           <v-img
             class="white--text align-end"
             :src="product.image"
@@ -65,9 +70,14 @@
         md="6"
         lg="6"
         xl="6"
-        class="d-flex justify-center"
+        class="d-flex align-center justify-center"
       >
-        <v-card class="d-flex align-center" width="800" elevation="15">
+        <v-card
+          class="d-flex align-center"
+          width="800"
+          height="400"
+          elevation="15"
+        >
           <v-img
             class="secondary--text align-end heightImage"
             :src="product.image"

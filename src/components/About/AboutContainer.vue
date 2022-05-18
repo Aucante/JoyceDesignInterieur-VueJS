@@ -75,7 +75,7 @@
 </template>
 
 <script>
-import Image from "./../../assets/Images/work1.jpg";
+import Image from "./../../assets/Images/Images Services/shu3.jpg";
 
 export default {
   data() {
