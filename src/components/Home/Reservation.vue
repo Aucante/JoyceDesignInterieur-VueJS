@@ -1,6 +1,6 @@
 <template>
-  <v-container fluid class="primary">
-    <v-row class="my-10">
+  <v-container fluid>
+    <v-row class="my-10 py-10">
       <v-col cols="12">
         <v-container fluid>
           <p

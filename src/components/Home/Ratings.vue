@@ -1,17 +1,17 @@
 <template>
-  <v-container fluid class="py-10">
+  <v-container fluid class="py-16 primary">
     <p class="d-flex justify-center display-1 font--text font-weight-medium">
       {{ title }}
     </p>
     <v-divider></v-divider>
-    <v-card flat tile>
+    <v-card flat tile class="primary">
       <v-window v-model="onboarding">
         <v-window-item
           v-for="(customer, i) in customers"
           :key="i"
           class="py-16"
         >
-          <v-card color="transparent" height="200" outlined>
+          <v-card color="primary" height="200" outlined>
             <v-row class="fill-height" align="center" justify="center">
               <v-icon color="icon" size="50">{{ mdi }}</v-icon>
               <v-card-text class="text-center title font--text">

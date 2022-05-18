@@ -9,7 +9,7 @@
         ></v-app-bar-nav-icon>
 
         <v-toolbar-title
-          ><v-avatar size="110" class="mt-10 ml-5">
+          ><v-avatar size="90" class="mt-10 ml-5">
             <img :src="logo" alt="John" /> </v-avatar
         ></v-toolbar-title>
 
@@ -102,7 +102,7 @@
 </template>
 
 <script>
-import Logo from "./../assets/logo/Logo.png";
+import Logo from "./../assets/logo/logo.png";
 
 export default {
   data() {

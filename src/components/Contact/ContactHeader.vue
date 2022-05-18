@@ -1,5 +1,5 @@
 <template>
-  <v-row class="py-10">
+  <v-row class="py-16">
     <v-col cols="12">
       <v-container fluid>
         <p

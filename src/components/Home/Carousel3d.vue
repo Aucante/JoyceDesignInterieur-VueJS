@@ -1,16 +1,15 @@
 <template>
-  <v-container class="primary" fluid>
+  <v-container class="primary py-8" fluid>
     <h1
       class="
         d-flex
         justify-center
         display-1
         my-10
-        font--text
-        font-weight-medium
+        font--text font-weight-medium
       "
     >
-     {{title}}
+      {{ title }}
     </h1>
     <v-divider></v-divider>
     <carousel-3d
@@ -41,7 +40,7 @@
 export default {
   data() {
     return {
-      title: 'MES REALISATIONS',
+      title: "MES REALISATIONS",
       btn: "Découverte des réalisations",
       link: "Achievements",
     };

@@ -1,11 +1,16 @@
 <template>
   <v-carousel
     cycle
-    height="440"
+    height="700"
     show-arrows-on-hover
     delimiter-icon="mdi-minus"
   >
-    <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide" gradient="to top left, rgba(100,115,201,.1), rgba(0,0,0,.9)">
+    <v-carousel-item
+      v-for="(slide, i) in slides"
+      :key="i"
+      :src="slide"
+      gradient="to top left, rgba(100,115,201,.1), rgba(0,0,0,.9)"
+    >
       <v-row>
         <v-col
           cols="10"
@@ -35,8 +40,7 @@
                     px-10
                     rounded-0
                     white
-                    font--text
-                    font-weight-bold
+                    font--text font-weight-bold
                   "
                 >
                   {{ slide.btn }}
@@ -51,8 +55,8 @@
 </template>
 
 <script>
-import Image2 from "./../../assets/Images/image4xl.jpg";
-import Image3 from "./../../assets/Images/image20xl.jpg";
+import Image2 from "./../../assets/Images/shu3.jpg";
+import Image3 from "./../../assets/Images/shu2.jpg";
 
 export default {
   data() {
@@ -67,7 +71,7 @@ export default {
       ],
       slides: [
         {
-          src: require('./../../assets/Images/image5xl.jpg'),
+          src: require("./../../assets/Images/shu1.jpg"),
           content: "SUBLIMEZ VOTRE INTERIEUR",
           colorText: "white",
           btn: "Découvrir",

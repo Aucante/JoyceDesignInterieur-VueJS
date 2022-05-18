@@ -1,14 +1,7 @@
 <template>
   <v-container>
     <p
-      class="
-        d-flex
-        justify-center
-        display-1
-        my-8
-        font--text
-        font-weight-medium
-      "
+      class="d-flex justify-center display-1 my-8 font--text font-weight-medium"
     >
       {{ title }}
     </p>
@@ -27,33 +20,34 @@
             <v-col cols="12" class="d-flex justify-center align-center">
               <div>
                 <h1
-                  class="d-flex justify-center my-4 headline font--text font-weight-medium"
+                  class="
+                    d-flex
+                    justify-center
+                    my-4
+                    headline
+                    font--text font-weight-medium
+                  "
                 >
-                  {{subtitle}}
+                  {{ subtitle }}
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  cupiditate voluptate debitis esse tempore unde consectetur
-                  voluptatem sequi et eum, animi error nemo perspiciatis! Esse
-                  sunt quo expedita ipsum facilis.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  cupiditate voluptate debitis esse tempore unde consectetur
-                  voluptatem sequi et eum, animi error nemo perspiciatis! Esse
-                  sunt quo expedita ipsum facilis.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  cupiditate voluptate debitis esse tempore unde consectetur
-                  voluptatem sequi et eum, animi error nemo perspiciatis! Esse
-                  sunt quo expedita ipsum facilis.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  cupiditate voluptate debitis esse tempore unde consectetur
-                  voluptatem sequi et eum, animi error nemo perspiciatis! Esse
-                  sunt quo expedita ipsum facilis.
+                  Il vous est difficile de repenser votre décoration, de vous
+                  projeter dans un bien neuf uniquement observé sur plans ou
+                  bien vous rêvez de rénover votre intérieur ? Vous êtes un
+                  particulier ou un professionnel de l'immobilier et vous
+                  recherchez une professionnelle pour de la valorisation
+                  immobilière ? Je suis décoratrice d’intérieur certifiée ainsi
+                  que créatrice d’intérieurs 3D en ligne. Mes conseils en
+                  décoration d’intérieur et ma créativité vous seront utiles.
+                  Passionnée par l'univers de la décoration depuis toujours,
+                  j'ai décidé de faire de cette passion, mon métier. Je vous
+                  accompagne dans vos projets de décoration, rénovation,
+                  valorisation immobilière, projection dans du neuf ou encore
+                  d’investissement. J'ai à coeur de vous apporter une entière
+                  satisfaction et de respecter au mieux vos attentes. Planches
+                  d’ambiance, modélisations en 3D avec rendus photos réalistes,
+                  shopping list, à la carte ou au forfait, choisissez votre
+                  prestation personnalisée sur mesure.
                 </p>
               </div>
             </v-col>

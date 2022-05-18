@@ -17,12 +17,14 @@
             width="400"
             outlined
           >
-            <v-icon
-              color="icon"
-              size="110"
-              class="d-flex justify-center mb-4"
-              >{{ contact.icon }}</v-icon
-            >
+            <a v-bind:href="contact.href">
+              <v-icon
+                color="icon"
+                size="110"
+                class="d-flex justify-center mb-4"
+                >{{ contact.icon }}</v-icon
+              >
+            </a>
             <div>
               <p class="d-flex justify-center headline font-weight-medium">
                 {{ contact.title }}
@@ -34,6 +36,7 @@
               </p>
             </div>
           </v-container>
+
           <v-divider
             v-show="contact.divider"
             class="hidden-sm-and-down"
