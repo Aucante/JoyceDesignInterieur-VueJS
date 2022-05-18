@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import Image1xl from './../assets/Images/image7xl.jpg'
-import Image2xl from './../assets/Images/image20xl.jpg'
 
 import Agathe1 from './../assets/Images/Projet Agathe/Rendu 1 OK.jpg'
 import Agathe2 from './../assets/Images/Projet Agathe/Rendu 3 OK.jpg'
@@ -88,7 +86,7 @@ export default new Vuex.Store({
       title: 'Projet Lynda', 
       content: 'Ambiance moderne épurée', 
       description: 'Décoration d\'un salon-salle à manger-cuisine suite à achat dans du neuf. Cette ambiance mélange modernité, minimalisme et matières naturelles. Au niveau des couleurs, le choix s\'est porté sur le blanc, le noir et le beige. Le beige et les matières naturelles viennent contraster et réchauffer cet intérieur.',
-      src: Lynda1,
+      src: Lynda3,
       style: 'Moderne',
       ambiance: 'épurée',
       decoration: 'marbre, bois, cuir',
@@ -110,7 +108,7 @@ export default new Vuex.Store({
       title: 'Projet Chiraz', 
       content: 'Ambiance cocooning chic', 
       description: 'Décoration d\'un salon et d\'une salle à manger suite à achat. Pour ce projet, ma cliente souhaitait une ambiance cocooning, chaleureuse et moderne. Le but étant également de gagner en luminosité en travaillant les poutres et le parquet d\'origine.',
-      src: Chiraz1,
+      src: Chiraz2,
       style: 'Moderne',
       ambiance: 'chaleureuse',
       decoration: 'bois',
@@ -121,7 +119,7 @@ export default new Vuex.Store({
       title: 'Projet Gabrielle',
       content: 'Ambiance pastel ludique', 
       description: 'Décoration d\'une chambre de petite fille. Pour ce projet, le choix s\'est porté sur des couleurs douces pastel pour cette chambre de petite fille afin de créer une athmosphère calme et reposante. Il y a également plusieurs espaces dédiés : le coin sommeil, le coin bureau et le coin ludique.',
-      src: Gabrielle1,
+      src: Gabrielle7,
       style: 'Moderne pastel',
       ambiance: 'douce',
       decoration: 'bois',
@@ -132,7 +130,7 @@ export default new Vuex.Store({
       title: 'Projet Lena', 
       content: 'Ambiance moderne chic', 
       description: 'Décoration d\'un bureau à usage professionnel. Ma cliente thérapeute voulait un espace chic, moderne avec des couleurs neutres pour que ses patients s\'y sentent bien.  ',
-      src: Lena1,
+      src: Lena6,
       style: 'Moderne chic',
       ambiance: 'apaisante',
       decoration: 'bois, lin',
@@ -143,7 +141,7 @@ export default new Vuex.Store({
       title: 'Projet Norah',
       content: 'Ambiance bien-être', 
       description: 'Décoration d\'une chambre de bébé. Les clients qui attendent un heureux évènement souhaitaient une chambre neutre, apaisante et naturelle, le tout dans une note scandinave.',
-      src: Norah1,
+      src: Norah5,
       style: 'scandinave',
       ambiance: 'bien-être',
       decoration: 'bois, matières naturelles',
@@ -154,7 +152,7 @@ export default new Vuex.Store({
         title: 'Projet Olivier',
         content: 'Ambiance scandinave', 
         description: 'Décoration d\'un séjour-cuisine. Mon client souhaitait réorganiser l\'aménagement de son séjour, changer la décoration de sa cuisine et avoir les espaces bien délimités. Le tout dans un style scandinave et en gardant certains de ses meubles.',
-        src: Olivier1,
+        src: Olivier2,
         style: 'scandinave',
         ambiance: 'scandinave',
         decoration: 'bois',
@@ -166,7 +164,7 @@ export default new Vuex.Store({
         title: 'Projet Tivat',
         content: 'Ambiance moderne neutre', 
         description: 'Décoration d\'un appartement destiné à la location saisonnière. Les clients souhaitaient une décoration moderne, fonctionnelle et des couleurs neutres pour plaire au plus grand nombre.',
-        src: Tivat1,
+        src: Tivat3,
         style: 'moderne',
         ambiance: 'moderne',
         decoration: 'bois',
@@ -177,7 +175,7 @@ export default new Vuex.Store({
           title: 'Projet Agathe', 
           content: 'Ambiance bohème chic', 
           description: 'Décoration d\'une chambre. La cliente m\'a demandé d\'intégrer des matières naturelles et du bois pour une ambiance chaleureuse.',
-          src: Agathe1,
+          src: Agathe2,
           style: 'bohème chic',
           ambiance: 'naturelle',
           decoration: 'bois, matières naturelles',
@@ -190,26 +188,25 @@ export default new Vuex.Store({
         title: 
         'Prestations à la carte', 
         mdi: 'mdi-cards-outline', 
-        image: Image1xl, 
         products: [
-          {
-            content: 'Shopping list', 
-            description: 'Pour cette prestation, nous allons collaborer sur une shopping list. Qu\'est ce qu\'une shopping list ? C\'est le listing de l\'ensemble du mobilier et des accessoires à acheter pour votre projet déco. Elle sera composée de tous les mobiliers et accessoires de votre intérieur et les informations suivantes seront indiquées : l\'article, la photo de l\'article, le fournisseur, la référence, les dimensions, le coloris, le prix, la quantité et le budget total.', 
-            price: 79, 
-            image: require('./../assets/Prestations/ShoppingList/shoppingAzzura.jpg'),
-            position: 'left'
-          },
           {
             content: 'Planche d\'ambiance', 
             description: 'La planche d\'ambiance est la base du projet déco. Elle permet de valider l\'ambiance générale et vos choix pour les couleurs et les matériaux.', 
             price: 69, 
-            image: require('./../assets/Prestations/PlancheAmbiance/PlancheAmbianceBOHO.jpg'),
+            image: require('./../assets/Images/Images Services/Forfait pièce techique.jpg'),
+            position: 'left'
+          },
+          {
+            content: 'Shopping list', 
+            description: 'Pour cette prestation, nous allons collaborer sur une shopping list. Qu\'est ce qu\'une shopping list ? C\'est le listing de l\'ensemble du mobilier et des accessoires à acheter pour votre projet déco. Elle sera composée de tous les mobiliers et accessoires de votre intérieur et les informations suivantes seront indiquées : l\'article, la photo de l\'article, le fournisseur, la référence, les dimensions, le coloris, le prix, la quantité et le budget total.', 
+            price: 79, 
+            image: require('./../assets/Images/Images Services/Forfait pièce techique.jpg'),
             position: 'right'
           },
           {
             content: 'Modélisation 3D - petite pièce',  
             description: 'Qu\'est-ce qu\'une petite pièce ? - Une entrée - Un WC. Je modélise en 3D une petite pièce de votre choix et vous transmets 5 rendus photos réalistes ainsi qu\'un compte-rendu Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
-            price: 85, 
+            price: 89, 
             image: require('./../assets/Images/Images Services/Modélisation 3D petite pièce.jpg'),
             position: 'left'
           },
@@ -242,7 +239,6 @@ export default new Vuex.Store({
         id: 2,
         title: 'Prestations au forfait', 
         mdi: 'mdi-credit-card-multiple-outline', 
-        image: Image2xl, 
         products: [
           {
             content: 'Forfait pièce simple', 
@@ -267,15 +263,15 @@ export default new Vuex.Store({
           },
           {
             content: 'Formule maison complète maximum 100m2',  
-            description: 'L\'aménagement et la décoration de votre maison/ appartement vous est difficile ? Confiez-moi votre projet. Toutes les pièces de votre intérieur seront réalisées. Je modélise en 3D toutes les pièces de votre logement et vous transmets 4 rendus photos réalistes par pièce ainsi qu\'un compte-rendu. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
-            price: 349, 
+            description: 'L\'aménagement et la décoration de votre maison/ appartement vous est difficile ? Confiez-moi votre projet. Toutes les pièces de votre intérieur seront réalisées. Je modélise en 3D toutes les pièces de votre logement et vous transmets 4 rendus photos réalistes par pièce ainsi qu\'un compte-rendu et une shopping list. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
+            price: 419, 
             image: require('./../assets/Images/Images Services/Formule maison complète max 100m2.jpg'),
             position: 'right'
           },
           {
             content: 'Formule maison complète maximum 200m2',  
-            description: 'L\'aménagement et la décoration de votre maison/ appartement vous est difficile ? Confiez-moi votre projet. Toutes les pièces de votre intérieur seront réalisées. Je modélise en 3D toutes les pièces de votre logement et vous transmets 4 rendus photos réalistes par pièce ainsi qu\'un compte-rendu. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
-            price: 449, 
+            description: 'L\'aménagement et la décoration de votre maison/ appartement vous est difficile ? Confiez-moi votre projet. Toutes les pièces de votre intérieur seront réalisées. Je modélise en 3D toutes les pièces de votre logement et vous transmets 4 rendus photos réalistes par pièce ainsi qu\'un compte-rendu et une shopping list. Les rendus vous permettent de vous projeter et de valider votre futur agencement intérieur. Vous bénéficiez de conseils pour le choix des couleurs, des matériaux et de l\'agencement.', 
+            price: 529, 
             image: require('./../assets/Images/Images Services/Formule maison complète max 200m2.jpg'),
             position: 'left'
           },
@@ -369,14 +365,14 @@ export default new Vuex.Store({
       },
       {
         title: 'Whatsapp', 
-        content: '+336-118-911-16', 
+        content: '+33-6-11-89-11-16', 
         icon: 'mdi-whatsapp',  
         divider: true,
         href: ''
       },
       {
         title: 'Instagram', 
-        content: '@joycedesigninterieur', 
+        content: '@joyceinteriordesigner', 
         icon: 'mdi-instagram',  
         divider: false,
         href: 'https://www.instagram.com/joyceinteriordesigner/'

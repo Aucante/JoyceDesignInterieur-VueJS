@@ -42,6 +42,8 @@
                     white
                     font--text font-weight-bold
                   "
+                  router
+                  :to="{ name: slide.link }"
                 >
                   {{ slide.btn }}
                 </v-btn>
@@ -55,8 +57,8 @@
 </template>
 
 <script>
-import Image2 from "./../../assets/Images/shu3.jpg";
-import Image3 from "./../../assets/Images/shu2.jpg";
+import Image2 from "./../../assets/Images/Images Services/shu2.jpg";
+import Image3 from "./../../assets/Images/Images Services/shu3.jpg";
 
 export default {
   data() {
@@ -71,22 +73,25 @@ export default {
       ],
       slides: [
         {
-          src: require("./../../assets/Images/shu1.jpg"),
+          src: require("./../../assets/Images/Images Services/shu1.jpg"),
           content: "SUBLIMEZ VOTRE INTERIEUR",
           colorText: "white",
           btn: "Découvrir",
+          link: "Achievements",
         },
         {
           src: Image2,
           content: "DECOUVREZ NOS REALISATIONS",
           colorText: "white",
           btn: "Découvrir",
+          link: "Achievements",
         },
         {
           src: Image3,
           content: "PRISE DE CONTACT",
           colorText: "blue-grey darken-4",
           btn: "Contact",
+          link: "Contact",
         },
       ],
     };

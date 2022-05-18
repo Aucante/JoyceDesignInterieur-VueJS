@@ -32,7 +32,6 @@
 export default {
   data() {
     return {
-      image: require("./../../assets/Images/image7xl.jpg"),
       title: "PRESTATIONS",
       subtitle: "Retrouvez toutes nos prestations",
     };
@@ -44,15 +43,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-#backgroundContainer {
-  background-color: #efebe9;
-}
-.hero {
-  background-size: cover;
-  height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("./../../assets/Images/image7xl.jpg");
-}
-</style>

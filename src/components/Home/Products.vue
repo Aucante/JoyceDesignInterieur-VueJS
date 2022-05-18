@@ -18,7 +18,15 @@
           xl="3"
           class="d-flex justify-center"
         >
-          <v-card class="justify-center pa-10 outlined" width="400" tile hover>
+          <v-card
+            class="justify-center pa-10 outlined"
+            width="400"
+            tile
+            shaped
+            hover
+            router
+            :to="{ name: 'Service', params: { id: service.id } }"
+          >
             <v-icon color="icon" size="90" class="d-flex justify-center mb-4">{{
               service.mdi
             }}</v-icon>
@@ -71,6 +79,7 @@ export default {
       link: "Services",
     };
   },
+  props: ["id"],
   computed: {
     services() {
       return this.$store.getters.services;

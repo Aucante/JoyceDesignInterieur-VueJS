@@ -19,7 +19,31 @@
             <v-col cols="8" offset="2" class="d-flex justify-center">
               <v-container>
                 <div class="my-7">
-                  <p>{{ content }}</p>
+                  <p>
+                    Il vous est difficile de repenser votre décoration, de vous
+                    projeter dans un bien neuf uniquement observé sur plans ou
+                    bien vous rêvez de rénover votre intérieur ? Vous êtes un
+                    particulier ou un professionnel de l'immobilier et vous
+                    recherchez une professionnelle pour de la valorisation
+                    immobilière ?
+                  </p>
+                  <p>
+                    Je suis décoratrice d’intérieur certifiée ainsi que
+                    créatrice d’intérieurs 3D en ligne. Mes conseils en
+                    décoration d’intérieur et ma créativité vous seront utiles.
+                    Passionnée par l'univers de la décoration depuis toujours,
+                    j'ai décidé de faire de cette passion, mon métier. Je vous
+                    accompagne dans vos projets de décoration, rénovation,
+                    valorisation immobilière, projection dans du neuf ou encore
+                    d’investissement.
+                  </p>
+                  <p>
+                    J'ai à coeur de vous apporter une entière satisfaction et de
+                    respecter au mieux vos attentes. Planches d’ambiance,
+                    modélisations en 3D avec rendus photos réalistes, shopping
+                    list, à la carte ou au forfait, choisissez votre prestation
+                    personnalisée sur mesure.
+                  </p>
                 </div>
               </v-container>
             </v-col>
@@ -48,8 +72,6 @@ export default {
       title: "PRESENTATION",
       btn: "Plus d'informations",
       link: "About",
-      content:
-        "Il vous est difficile de repenser votre décoration, de vous projeter dans un bien neuf uniquement observé sur plans ou bien vous rêvez de rénover votre intérieur ? Vous êtes un particulier ou un professionnel de l'immobilier et vous recherchez une professionnelle pour de la valorisation immobilière ? Je suis décoratrice d’intérieur certifiée ainsi que créatrice d’intérieurs 3D en ligne. Mes conseils en décoration d’intérieur et ma créativité vous seront utiles. Passionnée par l'univers de la décoration depuis toujours, j'ai décidé de faire de cette passion, mon métier. Je vous accompagne dans vos projets de décoration, rénovation, valorisation immobilière, projection dans du neuf ou encore d’investissement. J'ai à coeur de vous apporter une entière satisfaction et de respecter au mieux vos attentes. Planches d’ambiance, modélisations en 3D avec rendus photos réalistes, shopping list, à la carte ou au forfait, choisissez votre prestation personnalisée sur mesure. ",
       length: 3,
     };
   },

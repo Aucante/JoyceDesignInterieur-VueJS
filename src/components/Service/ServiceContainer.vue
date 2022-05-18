@@ -140,15 +140,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.hero {
-  background-size: cover;
-  height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 4), rgba(0, 0, 0, 0.8)),
-    url("./../../assets/Images/Background/back1.jpg");
-}
-.heightImage {
-  height: auto;
-}
-</style>
