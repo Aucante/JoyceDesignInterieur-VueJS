@@ -13,7 +13,6 @@
           <v-col cols="12" class="d-flex justify-center">
             <v-card
               class="d-flex align-center mx-auto mt-10 transparent"
-              width="500"
               outlined
             >
               <v-card-text>
@@ -46,19 +45,14 @@
         xl="6"
         class="d-flex align-center justify-center"
       >
-        <v-card
-          class="d-flex align-center"
+        <v-img
+          class="white--text align-end"
+          :src="product.image"
+          :aspect-ratio="16 / 9"
           width="800"
           height="400"
-          elevation="15"
         >
-          <v-img
-            class="white--text align-end"
-            :src="product.image"
-            :aspect-ratio="16 / 9"
-          >
-          </v-img>
-        </v-card>
+        </v-img>
       </v-col>
     </v-row>
   </v-container>
@@ -72,19 +66,14 @@
         xl="6"
         class="d-flex align-center justify-center"
       >
-        <v-card
-          class="d-flex align-center"
+        <v-img
+          class="secondary--text align-end heightImage"
+          :src="product.image"
+          :aspect-ratio="16 / 9"
           width="800"
           height="400"
-          elevation="15"
         >
-          <v-img
-            class="secondary--text align-end heightImage"
-            :src="product.image"
-            :aspect-ratio="16 / 9"
-          >
-          </v-img>
-        </v-card>
+        </v-img>
       </v-col>
       <v-col
         cols="12"
@@ -98,7 +87,6 @@
           <v-col cols="12" class="d-flex justify-center">
             <v-card
               class="d-flex align-center mx-auto mt-10 transparent"
-              width="500"
               outlined
             >
               <v-card-text class="circular--text">
