@@ -58,7 +58,7 @@
 export default {
   data: () => ({
     title: "AVIS CLIENTS",
-    length: 4,
+    length: 5,
     onboarding: 0,
     mdi: "mdi-account",
   }),

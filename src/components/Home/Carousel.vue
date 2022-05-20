@@ -57,8 +57,8 @@
 </template>
 
 <script>
-import Image2 from "./../../assets/Images/Images Services/shu2.jpg";
-import Image3 from "./../../assets/Images/Images Services/shu3.jpg";
+import Image2 from "./../../assets/Images/Images Services/s1.jpg";
+import Image3 from "./../../assets/Images/Images Services/s2.jpg";
 
 export default {
   data() {
@@ -73,7 +73,7 @@ export default {
       ],
       slides: [
         {
-          src: require("./../../assets/Images/Images Services/shu1.jpg"),
+          src: require("./../../assets/Images/Images Services/s3.jpg"),
           content: "SUBLIMEZ VOTRE INTERIEUR",
           colorText: "white",
           btn: "Découvrir",
