@@ -193,14 +193,14 @@ export default new Vuex.Store({
             content: 'Planche d\'ambiance', 
             description: 'La planche d\'ambiance est la base du projet déco. Elle permet de valider l\'ambiance générale et vos choix pour les couleurs et les matériaux.', 
             price: '69 €', 
-            image: require('./../assets/Images/Images Services/Forfait pièce techique.jpg'),
+            image: require('./../assets/Images/Images Services/ambiance.png'),
             position: 'left'
           },
           {
             content: 'Shopping list', 
             description: 'Pour cette prestation, nous allons collaborer sur une shopping list. Qu\'est ce qu\'une shopping list ? C\'est le listing de l\'ensemble du mobilier et des accessoires à acheter pour votre projet déco. Elle sera composée de tous les mobiliers et accessoires de votre intérieur et les informations suivantes seront indiquées : l\'article, la photo de l\'article, le fournisseur, la référence, les dimensions, le coloris, le prix, la quantité et le budget total.', 
             price: '79 €', 
-            image: require('./../assets/Images/Images Services/Forfait pièce techique.jpg'),
+            image: require('./../assets/Images/Images Services/shopping.jpg'),
             position: 'right'
           },
           {
